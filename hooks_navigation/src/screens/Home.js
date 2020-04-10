@@ -18,6 +18,7 @@ export default ({navigation}) => {
   }, [showText]);
   useEffect(() => {
     console.log('didmount');
+    navigation.navigate('Home3');
   }, []);
   return (
     <SafeAreaView>
@@ -59,7 +60,7 @@ export default ({navigation}) => {
         title="Trigger Alrarm"
         onPress={() => {
           timeout.current = setTimeout(() => {
-            Alert(alert("일어나!!"));
+            Alert.alert("일어나!!");
           }, 2000);
         }}
       />
@@ -78,6 +79,13 @@ export default ({navigation}) => {
           navigation.navigate("Home2");
         }}
       />    
+
+    <Button
+        title="Go to Home3"
+        onPress={() => {
+          navigation.navigate("Home3");
+        }}
+      />   
 
 
 

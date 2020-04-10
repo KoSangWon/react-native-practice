@@ -14,7 +14,7 @@ export default () => {
             clearInterval(interval.current);
             interval.current = null;
         }
-    })
+    }, [])
 
     return (
         <SafeAreaView>
