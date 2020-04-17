@@ -11,6 +11,7 @@ const Container = styled.View`
     width: ${sWidth};
     height: 100px;
     background-color: lightgreen;
+    flex-direction: row;
 `;
 
 
@@ -40,8 +41,23 @@ const TabBar = ({navigation}) => {
             }}>
                 <Button/>
             </TouchableWithoutFeedback>
+
+            <TouchableWithoutFeedback
+            onPress={() => {
+                navigation.navigate('Search');
+            }}>
+                <Button/>
+            </TouchableWithoutFeedback>
+
+            <TouchableWithoutFeedback
+            onPress={() => {
+                navigation.navigate('Search');
+            }}>
+                <Button/>
+            </TouchableWithoutFeedback>
             
         </Container>
+        
     );
 };
 
