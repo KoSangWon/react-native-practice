@@ -32,6 +32,23 @@ const Story = styled.View`
 
 const StoryContent = styled.ScrollView`
     flex-direction: row;
+    
+`;
+
+const StoryInner = styled.View`
+    width: 50px;
+    height: 50px;
+    backgroundColor: #bdc3c7;
+    border-radius: 75px;
+`;
+
+const StoryOuter = styled.View`
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+    backgroundColor: white;
+    border-radius: 80px;
+    margin: 10px;
 `;
 
 const WhiteText = styled.Text`
@@ -42,15 +59,37 @@ const Home = () => {
     return (
       <Container>
         <Header>
-            <Icon name="camera-outline" size={40} color="white"></Icon>
+            <Icon name="ios-camera" size={40} color="white"></Icon>
             <Icon name="logo-instagram" size={40} color="white"></Icon>
-            <Icon name="paper-plane" size={40} color="white"></Icon>
+            <Icon name="ios-paper-plane" size={40} color="white"></Icon>
         </Header>
         <Story>
             <StoryContent horizontal>
-                <WhiteText>photo</WhiteText>
-                <WhiteText>phtoo</WhiteText>
-
+                <View style={{justifyContent: 'center'}}>
+                    <StoryOuter>
+                        <StoryInner/>
+                    </StoryOuter>
+                </View>
+                <View style={{justifyContent: 'center'}}>
+                    <StoryOuter>
+                        <StoryInner/>
+                    </StoryOuter>
+                </View>
+                <View style={{justifyContent: 'center'}}>
+                    <StoryOuter>
+                        <StoryInner/>
+                    </StoryOuter>
+                </View>
+                <View style={{justifyContent: 'center'}}>
+                    <StoryOuter>
+                        <StoryInner/>
+                    </StoryOuter>
+                </View>
+                <View style={{justifyContent: 'center'}}>
+                    <StoryOuter>
+                        <StoryInner/>
+                    </StoryOuter>
+                </View>
             </StoryContent>
         </Story>
 

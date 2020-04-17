@@ -1,13 +1,12 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Home from '../screens/Home';
 import Search from '../screens/Search';
 import Upload from '../screens/Upload';
 import Like from '../screens/Like';
 import MyPage from '../screens/MyPage';
-import Icon from 'react-native-vector-icons/Ionicons';
+import Ionicon from 'react-native-vector-icons/Ionicons';
 
 
 
@@ -22,19 +21,19 @@ const MyTabs = () => {
 
             if (route.name === 'Home') {
               iconName = focused
-                ? 'ios-information-circle'
-                : 'ios-information-circle-outline';
+                ? 'ios-home'
+                : 'ios-home';
             } else if (route.name === 'Search') {
-              iconName = focused ? 'ios-list-box' : 'ios-list';
+              iconName = focused ? 'ios-search' : 'ios-search';
             } else if (route.name === 'Upload') {
-              iconName = focused ? 'ios-list-box' : 'ios-list';
+              iconName = focused ? 'ios-add-circle' : 'ios-add-circle';
             } else if (route.name === 'Like') {
-              iconName = focused ? 'ios-list-box' : 'ios-list';
-            } else if (route.name === 'Mypage') {
-              iconName = focused ? 'ios-list-box' : 'ios-list';
+              iconName = focused ? 'ios-heart' : 'ios-heart';
+            } else if (route.name === 'MyPage') {
+              iconName = focused ? 'ios-person' : 'ios-person';
             }
 
-            return <Icon name={iconName} size={size} color={color} />;
+            return <Ionicon name={iconName} size={size} color={color} />;
           },
         })}
         tabBarOptions={{
