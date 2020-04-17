@@ -4,6 +4,7 @@ import Add from './src/screens/Add';
 import Search from './src/screens/Search';
 import Like from './src/screens/Like';
 import My from './src/screens/My';
+import FeedStack from './src/navigations/FeedStack';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -14,7 +15,7 @@ const App = () => {
   return (
     <NavigationContainer>
       <Tab.Navigator>
-        <Tab.Screen name="Feed" component={Feed} />
+        <Tab.Screen name="FeedStack" component={FeedStack} />
         <Tab.Screen name="Search" component={Search} />
         <Tab.Screen name="Add" component={Add} />
         <Tab.Screen name="Like" component={Like} />
