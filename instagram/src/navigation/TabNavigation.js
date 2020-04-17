@@ -6,9 +6,8 @@ import Home from '../screens/Home';
 import Search from '../screens/Search';
 import Upload from '../screens/Upload';
 import Like from '../screens/Like';
-import Setting from '../screens/Setting';
-import Icon from 'react-native-vector-icons/FontAwesome';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import MyPage from '../screens/MyPage';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 
 
@@ -25,22 +24,29 @@ const MyTabs = () => {
               iconName = focused
                 ? 'ios-information-circle'
                 : 'ios-information-circle-outline';
-            } else if (route.name === 'Settings') {
+            } else if (route.name === 'Search') {
+              iconName = focused ? 'ios-list-box' : 'ios-list';
+            } else if (route.name === 'Upload') {
+              iconName = focused ? 'ios-list-box' : 'ios-list';
+            } else if (route.name === 'Like') {
+              iconName = focused ? 'ios-list-box' : 'ios-list';
+            } else if (route.name === 'Mypage') {
               iconName = focused ? 'ios-list-box' : 'ios-list';
             }
 
-            // You can return any component that you like here!
-            return <Ionicons name={iconName} size={size} color={color} />;
+            return <Icon name={iconName} size={size} color={color} />;
           },
         })}
         tabBarOptions={{
           activeTintColor: 'tomato',
           inactiveTintColor: 'gray',
         }}>
-          <Tab.Screen name="Home" 
-            component={Home} 
-            />
-          <Tab.Screen name="Settings" component={Setting} />
+          <Tab.Screen name="Home" component={Home} />
+          <Tab.Screen name="Search" component={Search} />
+          <Tab.Screen name="Upload" component={Upload} />
+          <Tab.Screen name="Like" component={Like} />
+          <Tab.Screen name="MyPage" component={MyPage} />
+
         </Tab.Navigator>
       </NavigationContainer>
     );

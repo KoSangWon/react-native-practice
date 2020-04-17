@@ -24,7 +24,8 @@
     "react-native-safe-area-view": "1.0.0",
     "react-native-screens": "2.5.0",
     "react-native-vector-icons": "6.6.0",
-    "react-navigation-tabs": "2.8.11"
+    "react-navigation-tabs": "2.8.11",
+    "styled-components": "5.1.0"
   },
   "devDependencies": {
     "@babel/core": "7.9.0",

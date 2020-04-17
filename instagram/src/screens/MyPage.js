@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { Text, View } from 'react-native';
 
-const Setting = () => {
+const MyPage = () => {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Settings!</Text>
+        <Text>MyPage!</Text>
       </View>
     );
   }
 
-  export default Setting;
+  export default MyPage;
