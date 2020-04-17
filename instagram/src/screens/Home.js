@@ -1,15 +1,17 @@
 import * as React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import styled from 'styled-components';
-import Icon from 'react-native-vector-icons/Ionicons';
+import Ionicon from 'react-native-vector-icons/Ionicons';
+
+import UnitContent from '../components/UnitContent';
 
 const Container = styled.SafeAreaView`
-    flex: 1;
     background-color: black;
 `;
 
 const Content = styled.ScrollView`
-    flex: 1;
+    width: 100%;
+    height: 100%;
 `;
 
 const Header = styled.View`
@@ -32,7 +34,6 @@ const Story = styled.View`
 
 const StoryContent = styled.ScrollView`
     flex-direction: row;
-    
 `;
 
 const StoryInner = styled.View`
@@ -51,17 +52,13 @@ const StoryOuter = styled.View`
     margin: 10px;
 `;
 
-const WhiteText = styled.Text`
-    color: white;
-`;
-
 const Home = () => {
     return (
       <Container>
         <Header>
-            <Icon name="ios-camera" size={40} color="white"></Icon>
-            <Icon name="logo-instagram" size={40} color="white"></Icon>
-            <Icon name="ios-paper-plane" size={40} color="white"></Icon>
+            <Ionicon name="ios-camera" size={40} color="white"></Ionicon>
+            <Ionicon name="logo-instagram" size={40} color="white"></Ionicon>
+            <Ionicon name="ios-paper-plane" size={40} color="white"></Ionicon>
         </Header>
         <Story>
             <StoryContent horizontal>
@@ -95,7 +92,7 @@ const Home = () => {
 
 
         <Content>
-            <WhiteText>ssss</WhiteText>
+            <UnitContent/>
         </Content>
       </Container>
     );

@@ -4,7 +4,7 @@ import {SafeAreaView, Text} from 'react-native';
 export default () => {
     return (
         <SafeAreaView>
-            <Text>sssssdfsaf</Text>
+            <Text>UserDetail 창입니다.</Text>
         </SafeAreaView>
     )
 }
