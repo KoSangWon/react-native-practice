@@ -15,7 +15,9 @@ const App = () => {
   return (
     <NavigationContainer>
       <Tab.Navigator>
-        <Tab.Screen name="FeedStack" component={FeedStack} />
+        <Tab.Screen name="FeedStack" component={FeedStack} options={{
+          tabBarVisible: false,
+        }}/>
         <Tab.Screen name="Search" component={Search} />
         <Tab.Screen name="Add" component={Add} />
         <Tab.Screen name="Like" component={Like} />

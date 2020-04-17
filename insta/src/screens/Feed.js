@@ -5,6 +5,8 @@ import styled from 'styled-components';
 
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
+import TabBar from '../components/TabBar';
+
 
 
 //const width = Dimensions.get('screen').width 아래랑 똑같음.
@@ -159,6 +161,7 @@ export default ({navigation}) => {
                     </CommentContainer>
                 </Footer>
             </PostContainer>
+            <TabBar/>
         </ScrollView>
     );
 }
